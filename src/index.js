@@ -4,6 +4,7 @@ const BASE_URL = 'https://pokeapi.co/api/v2/';
 
 const btnEl = document.querySelector('.btn');
 const pokemonInfoEl = document.querySelector('.pokemon-info');
+let pokemonId = 0;
 document.body.style.backgroundColor = 'yellow';
 pokemonInfoEl.style.marginLeft = '900px';
 
@@ -16,7 +17,7 @@ function fetchPokemon() {
 }
 
 function findPokemonId(eve) {
-  let pokemonId = Math.floor(Math.random() * (100 - 1) + 1);
+  pokemonId = Math.floor(Math.random() * (100 - 1) + 1);
   console.log(pokemonId);
   if (!pokemonId) {
     console.log('Error');
