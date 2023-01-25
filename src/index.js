@@ -16,7 +16,7 @@ function fetchPokemon() {
 }
 
 function findPokemonId(eve) {
-  pokemonId = Math.floor(Math.random() * (100 - 1) + 1);
+  let pokemonId = Math.floor(Math.random() * (100 - 1) + 1);
   console.log(pokemonId);
   if (!pokemonId) {
     console.log('Error');
